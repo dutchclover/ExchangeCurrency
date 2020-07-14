@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/sort_group"
+        android:checkableBehavior="single">
+        <item
+            android:title="@string/rates_change_1h"
+            android:titleCondensed="camera"
+            android:visible="true"
+            android:checkable="true"
+            android:orderInCategory="0"/>
+        <item
+            android:title="@string/rates_change_24h"
+            android:titleCondensed="string"
+            android:visible="true"
+            android:checkable="true"
+            android:orderInCategory="1"/>
+        <item
+            android:title="@string/rates_change_7d"
+            android:titleCondensed="string"
+            android:visible="true"
+            android:checkable="true"
+            android:orderInCategory="2"/>
+    </group>
+</menu>

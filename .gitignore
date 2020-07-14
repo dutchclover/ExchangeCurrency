@@ -1,0 +1,17 @@
+.gradle
+.gradle/
+/local.properties
+
+.DS_Store
+
+.idea/
+
+*.iml
+
+# generated files
+bin/
+gen/
+
+**/build
+**/assets/crashlytics-build.properties
+**/com_crashlytics_export_strings.xml

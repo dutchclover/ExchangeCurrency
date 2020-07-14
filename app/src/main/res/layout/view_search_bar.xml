@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/search_button_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow_back_blue_24dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/search_delete_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:src="@drawable/ic_close_blue_24dp"
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
+
+    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toEndOf="@id/search_button_back"
+        android:layout_toLeftOf="@id/search_delete_button"
+        android:layout_toRightOf="@id/search_button_back"
+        android:layout_toStartOf="@id/search_delete_button"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="@string/search_bank_hint"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:inputType="text|textNoSuggestions"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/half_transparent_gray"
+        android:textCursorDrawable="@drawable/search_edit_text_cursor"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/valute_item_height"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/drag"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:padding="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_drag_handle"/>
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="2134234"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="@color/half_transparent_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/status"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!-->-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/diffImage"-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:src="@drawable/icon_arrow_down"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/diff"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="0,225"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="12sp"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/relation_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/half_transparent_black"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+</FrameLayout>

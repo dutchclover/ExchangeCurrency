@@ -1,0 +1,98 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/root_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:windowContentOverlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:background="@color/app_theme"
+                    android:contentInsetEnd="0dp"
+                    android:contentInsetLeft="0dp"
+                    android:contentInsetRight="0dp"
+                    android:contentInsetStart="0dp"
+                    android:contentInsetStartWithNavigation="0dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:padding="0dp"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetStartWithNavigation="0dp">
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|start"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"/>
+                    <FrameLayout
+                        android:id="@+id/menu_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"/>
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <!--<com.dgroup.exchangerates.ui.view.custom.BlurDrawerLayout-->
+            <!--android:id="@+id/drawer_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:blurRadius="2"-->
+            <!--app:closeDescription="@string/navigation_drawer_close"-->
+            <!--app:downScaleFactor="10"-->
+            <!--app:drawerUpImageId="@drawable/ic_drawer"-->
+            <!--app:openDescription="@string/navigation_drawer_open">-->
+
+            <!--</com.dgroup.exchangerates.ui.view.custom.BlurDrawerLayout>-->
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/actionbar_drag"
+            layout="@layout/toolbar_cb_rates_drag"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_width="match_parent"
+            android:visibility="gone" />
+
+
+        <com.dgroup.exchangerates.ui.view.custom.SearchBar
+            android:id="@+id/action_bar_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_gravity="top"/>
+
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/navigation_drawer"
+        android:name="com.dgroup.exchangerates.features.main.NavigationFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_navigation_drawer"/>
+</android.support.v4.widget.DrawerLayout>
+

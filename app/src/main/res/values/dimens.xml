@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="toolbar_height">54dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="anti_theft_t9_key_paddingTop">2dp</dimen>
+    <dimen name="anti_theft_t9_key_paddingBottom">2dp</dimen>
+    <dimen name="valute_item_height">60dp</dimen>
+
+    <dimen name="holder_name_w">125dp</dimen>
+    <dimen name="holder_price_w">80dp</dimen>
+    <dimen name="holder_change_w">80dp</dimen>
+    <dimen name="holder_capital_w">85dp</dimen>
+    <dimen name="holder_supply_w">80dp</dimen>
+    <dimen name="holder_volume_w">85dp</dimen>
+    <dimen name="holder_graph_w">120dp</dimen>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Курсы валют</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Избранное</string>
+    <string name="title_section2">Курсы банков</string>
+    <string name="title_section3">Рынок криптовалют</string>
+    <string name="title_section4">О приложении</string>
+    <string name="title_section10">Debug section</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+
+    <string name="valute_equals">%1$s %2$s : %3$s %4$s</string>
+
+    <string name="valute_basic">%1$s %2$s</string>
+
+    <string name="RUB">Российский рубль</string>
+    <string name="USD">Доллар США</string>
+    <string name="EUR">Евро</string>
+
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+
+    <string name="buy">Покупка</string>
+
+    <string name="sell">Продажа</string>
+
+    <string name="loading_error">Не удалось обновить данные</string>
+    <string name="loading_complete">Данные обновлены</string>
+    <string name="updated">Обновлено %s</string>
+    <string name="update">Обновление…</string>
+
+    <string name="sort_alphabet">Актуальность</string>
+    <string name="sort_usd_buy">USD покупка</string>
+    <string name="sort_usd_sell">UDS продажа</string>
+    <string name="sort_eur_buy">EUR покупка</string>
+    <string name="sort_eur_sell">EUR продажа</string>
+
+    <string name="search_bank_hint">Банк</string>
+    <string name="search_city_hint">Город</string>
+    <string name="search_not_found">Ничего не найдено</string>
+
+    <string name="city_not_found">Город с таким названием не найден</string>
+
+    <string name="def_city">Москва</string>
+    <string name="change_basic">Установлена базовая валюта %s</string>
+
+    <string name="change_positions">Изменить порядок</string>
+
+    <string name="info">
+        Для связи с разработчиком пишите на &lt;a href="androdev777@gmail.com">androdev777@gmail.com&lt;/a>."&lt;br&#47;&gt;""&lt;br&#47;&gt;"
+
+      <!--  Данные предоставлены Центральным Банком Российской Федерации &lt;a href="http://www.cbr.ru/">cbr.ru&lt;/a>."&lt;br&#47;&gt;""&lt;br&#47;&gt;"
+        Об использовании информации сайта Банка России."&lt;br&#47;&gt;"
+        Все материалы сайта Банка России могут быть воспроизведены в любых средствах массовой информации, на серверах сети Интернет или на любых иных носителях без каких-либо ограничений по объему и срокам публикации.
+        Это разрешение в равной степени распространяется на газеты, журналы, радиостанции, телеканалы, сайты и страницы сети Интернет.
+        Единственным условием перепечатки и ретрансляции является ссылка на первоисточник."&lt;br&#47;&gt;""&lt;br&#47;&gt;"
+        Обменные курсы банков предоставлены сайтом &lt;a href="http://kovalut.ru/">kovalut.ru&lt;/a>.
+        Данные о криптовалюте предоставлены сайтом &lt;a href="https://coinmarketcap.com/">coinmarketcap.com/&lt;/a>.-->
+    </string>
+
+    <string name="header_actual">Актуальные данные</string>
+    <string name="header_not_actual">Данные возможно устарели</string>
+
+    <string name="rates_change_1h">За 1 час</string>
+    <string name="rates_change_24h">За 24 часа</string>
+    <string name="rates_change_7d">За 7 дней</string>
+
+    <string name="share_btn">Поделиться</string>
+    <string name="rating_btn">Поставить оценку</string>
+    <string name="recommend">Поделитесь приложением с друзьями</string>
+    <string name="choose_one">Выберите приложение</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="no_appropriate_apps">У вас не установен интернет браузер</string>
+
+</resources>

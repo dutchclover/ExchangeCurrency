@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/sort_group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/sort_alphabet"
+              android:alphabeticShortcut="a"
+              android:checkable="true"
+              android:orderInCategory="0"
+              android:title="@string/sort_alphabet"/>
+
+        <item android:id="@+id/sort_usd_buy"
+              android:alphabeticShortcut="b"
+              android:checkable="true"
+              android:orderInCategory="1"
+              android:title="@string/sort_usd_buy"/>
+
+        <item android:id="@+id/sort_usd_sell"
+              android:alphabeticShortcut="c"
+              android:checkable="true"
+              android:orderInCategory="2"
+              android:title="@string/sort_usd_sell"/>
+
+        <item android:id="@+id/sort_eur_buy"
+              android:alphabeticShortcut="d"
+              android:checkable="true"
+              android:orderInCategory="3"
+              android:title="@string/sort_eur_buy"/>
+
+        <item android:id="@+id/sort_eur_sell"
+              android:alphabeticShortcut="e"
+              android:checkable="true"
+              android:orderInCategory="4"
+              android:title="@string/sort_eur_sell"/>
+    </group>
+</menu>

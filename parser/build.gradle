@@ -1,0 +1,23 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+mainClassName = "com.dgroup.parser.Runner"
+
+// edit output direction
+def outputDir = "../app/src/main/java/"
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/org.json.jar')
+    compile files('libs/jsoup-1.8.1.jar')
+}
+
+task createDocs {
+    def docs = file(outputDir)
+    docs.mkdirs()
+}
+
+run {
+    args outputDir
+}
+
